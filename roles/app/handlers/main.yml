@@ -1,0 +1,11 @@
+---
+# handlers file for ./roles/app
+- name: show a message
+  debug:
+    msg: "tomcat is restarting"
+
+- name: restart tomcat
+  service: 
+    name: tomcat
+    state: restarted
+
